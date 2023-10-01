@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 62,5%;
+    text-align: center;
+    font-size: 62,5%;
+    color: white;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 16%;
+    height: 20%;
+    gap: 0px;
+}
+
+/* Style for the dropdown button */
+.dropdown-button {
+    background-color: #004aad;
+    font-size: 100%;
+    font-style: unset;
+    font-weight: 600;
+    color: #fff;
+    padding: 15%;
+    width: 110%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 5% 5% 5% 5% rgba(0,0,0,0.2);
+    z-index: 1;
+  
+}
+
+/* Style for the dropdown items */
+.dropdown-item {
+    padding: 0px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Change the background color of the dropdown item when hovering */
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 0;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 62,5%;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 200%) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+ }
+/* phần 1 */
+ .navbar{
+    background-color: rgba(17, 7, 130,0.3);
+}
+
+/* Style for the brand/logo */
+.navbar-brand{
+    font-size: 250%;
+    font-family: Lucida Sans;
+    font-weight: 900;
+    margin-right: 10%;
+    color: #333;
+    padding:  0 0 0 10%;
+    text-decoration: none;
+}
+
+/* Style for the search form */
+.search-form{
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the search input */
+.search-input {
+    padding: 1% 2%;
+    margin-right: 62,5%;
+    justify-content: left;
+}
+
+/* Style for the search button */
+.search-button {
+    color: #fff;
+    padding: 1% 2%;
+    cursor: pointer;
+}
+.container text center {
+    display: grid; /* Sử dụng CSS Grid để sắp xếp các phần tử */
+    grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột bằng nhau */
+    gap: 62,5%; /* Khoảng cách giữa các phần tử */
+   
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    width: 100%; height: 200%;
+}
+
+.item {
+    padding: 62,5%;
+    border: 1% solid #ccc;
+    text-align: center;
+    flex: 1;
+    padding: 62,5%;
+    border: 1% solid #ccc;
+    text-align: center;
+}
+
+.item img {
+    width: 100%; /* Đặt chiều rộng của ảnh là 100% của phần tử cha */
+    height: auto; /* Tự động tính toán chiều cao để duy trì tỷ lệ khung hình */
+}
+/* Phần note */
+.container {
+    display: flex; /* Đẩy phần ghi chú sang bên phải */
+    max-width: 100%; /* 100% chiều rộng của trang */
+}
+
+.note-container {
+    background-color: #fff;
+    border: 2px ; /* Định dạng khung viền */
+    width: 100%; /* Chiếm 20% chiều rộng của trang */
+    height: 10%;
+    justify-content: center; /* Tính toán kích thước tổng cộng bao gồm biên và padding */
+}
+.note-form {
+    margin-top: 200%;
+    width: 200%;
+    height: 5%;
+}
+#note-input{
+    width: 200%;
+    height: 5%;
+}
+
+input[type="text"] {
+    width: 150%;
+    padding: 5%;
+    border: 1% solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+h1{
+    font-size: 200%;
+    padding-left:30%;
+}
